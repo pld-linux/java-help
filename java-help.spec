@@ -12,7 +12,7 @@ Version:	2.0.05
 Release:	0.3
 Epoch:		0
 License:	GPL v2
-Group:		Development/Languages/Java
+Group:		Libraries/Java
 Source0:	http://download.java.net/javadesktop/javahelp/javahelp2_0_05.zip
 # Source0-md5:	7bd68b82a1d5d8714856f661bd4d71a3
 URL:		http://java.sun.com/products/javahelp/index.jsp
@@ -42,7 +42,7 @@ i w sieciach korporacyjnych.
 %package manual
 Summary:	Manual for JavaHelp
 Summary(pl.UTF-8):	Podręcznik do systemu JavaHelp
-Group:		Development/Languages/Java
+Group:		Documentation
 
 %description manual
 Manual for JavaHelp.
@@ -65,7 +65,7 @@ Dokumentacja Javadoc do systemu JavaHelp.
 %package demo
 Summary:	Demo for JavaHelp
 Summary(pl.UTF-8):	Przykłady użycia systemu JavaHelp
-Group:		Development/Languages/Java
+Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
 %description demo
