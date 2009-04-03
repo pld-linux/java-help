@@ -5,9 +5,10 @@
 %bcond_without	javadoc		# don't build javadoc
 #
 %include	/usr/lib/rpm/macros.java
+%define		srcname		help
 Summary:	JavaHelp - online help system
 Summary(pl.UTF-8):	JavaHelp - system pomocy online
-Name:		javahelp
+Name:		java-help
 Version:	2.0.05
 Release:	0.3
 Epoch:		0
@@ -100,16 +101,16 @@ cp -a demos/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 # javadoc
 %if %{with javadoc}
-install -d $RPM_BUILD_ROOT%{_javadocdir}/%{name}-%{version}
-cp -pr apidocs/* $RPM_BUILD_ROOT%{_javadocdir}/%{name}-%{version}
-ln -s %{name}-%{version} $RPM_BUILD_ROOT%{_javadocdir}/%{name} # ghost symlink
+install -d $RPM_BUILD_ROOT%{_javadocdir}/%{srcname}-%{version}
+cp -pr apidocs/* $RPM_BUILD_ROOT%{_javadocdir}/%{srcname}-%{version}
+ln -s %{srcname}-%{version} $RPM_BUILD_ROOT%{_javadocdir}/%{srcname} # ghost symlink
 %endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %post javadoc
-ln -nfs %{name}-%{version} %{_javadocdir}/%{name}
+ln -nfs %{srcname}-%{version} %{_javadocdir}/%{srcname}
 
 %files
 %defattr(644,root,root,755)
@@ -126,8 +127,8 @@ ln -nfs %{name}-%{version} %{_javadocdir}/%{name}
 %if %{with javadoc}
 %files javadoc
 %defattr(644,root,root,755)
-%{_javadocdir}/%{name}-%{version}
-%ghost %{_javadocdir}/%{name}
+%{_javadocdir}/%{srcname}-%{version}
+%ghost %{_javadocdir}/%{srcname}
 %endif
 
 %files demo
