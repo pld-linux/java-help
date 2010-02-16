@@ -10,17 +10,16 @@ Summary:	JavaHelp - online help system
 Summary(pl.UTF-8):	JavaHelp - system pomocy online
 Name:		java-help
 Version:	2.0.05
-Release:	0.3
-Epoch:		0
+Release:	1
 License:	GPL v2
 Group:		Libraries/Java
 Source0:	http://download.java.net/javadesktop/javahelp/javahelp2_0_05.zip
 # Source0-md5:	7bd68b82a1d5d8714856f661bd4d71a3
 URL:		http://java.sun.com/products/javahelp/index.jsp
-BuildRequires:	jpackage-utils >= 0:1.5
+BuildRequires:	jpackage-utils >= 1.5
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	jpackage-utils >= 0:1.5
+Requires:	jpackage-utils >= 1.5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
