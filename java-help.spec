@@ -18,6 +18,7 @@ Source0:	http://download.java.net/javadesktop/javahelp/javahelp2_0_05.zip
 URL:		http://java.sun.com/products/javahelp/index.jsp
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	unzip
 Requires:	jpackage-utils >= 1.5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
