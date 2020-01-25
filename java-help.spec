@@ -4,7 +4,6 @@
 # Conditional build:
 %bcond_without	javadoc		# don't build javadoc
 #
-%include	/usr/lib/rpm/macros.java
 %define		srcname		help
 Summary:	JavaHelp - online help system
 Summary(pl.UTF-8):	JavaHelp - system pomocy online
