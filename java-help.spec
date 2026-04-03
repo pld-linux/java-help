@@ -9,7 +9,7 @@ Summary:	JavaHelp - online help system
 Summary(pl.UTF-8):	JavaHelp - system pomocy online
 Name:		java-help
 Version:	2.0.05
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries/Java
 Source0:	http://download.java.net/javadesktop/javahelp/javahelp2_0_05.zip
